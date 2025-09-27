@@ -4,66 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TQ Travel - Data-driven Travel Itineraries</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
+    <header class="main-header">
         <div class="container">
-            <h1>TQ Travel</h1>
-            <p>An Independent Advisor of the WorldVia Travel Network</p>
+            <div class="logo">TQ Travel</div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#services">Specialties</a>
+                <a href="#contact">Plan Your Trip</a>
+            </nav>
         </div>
     </header>
 
-    <nav>
-        <div class="container">
-            <a href="#about">About TQ Travel</a>
-            <a href="#services">Travel Specialties</a>
-            <a href="#contact">Plan Your Trip</a>
-        </div>
-    </nav>
-
     <main>
         <section class="hero">
-            <h2 id="hero-headline">Data-driven travel itineraries for modern travelers</h2>
-            <a href="#contact" class="cta-button" id="cta-button-text">Start Planning Now</a>
+            <div class="hero-content">
+                <h1>Data-driven travel itineraries for modern travelers.</h1>
+                <a href="#contact" class="cta-button">Start Planning Now</a>
+            </div>
         </section>
 
         <section id="about" class="section">
-            <div class="container">
-                <h2>About TQ Travel</h2>
-                <p id="about-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
-                    As a travel agent with a tech background (I am a Google software engineer) with a borderline unhealthy obsession with travel, I use the latest tech to find and stack promotions, deals, and quirks across travel industry providers to put together the absolute best bang for your buck trips.
+            <div class="container text-container">
+                <h2>Your Tech-Savvy Travel Advisor</h2>
+                <p>
+                    As a travel agent with a tech background and a borderline unhealthy obsession with travel, I use the latest tech to find and stack promotions, deals, and quirks across travel industry providers. The result? The absolute best bang-for-your-buck trips, meticulously planned for you.
                 </p>
             </div>
         </section>
 
-        <section id="services" class="section" style="background: #f4f4f4;">
+        <section id="services" class="section bg-light">
             <div class="container">
-                <h2>Our Travel Specialties</h2>
-                <div class="service-cards">
-                    <div class="card">
+                <h2 class="section-title">Travel Specialties</h2>
+                
+                <div class="specialty">
+                    <div class="specialty-image">
+                        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbb563?q=80&w=2070" alt="Luxury hotel poolside">
+                    </div>
+                    <div class="specialty-text">
+                        <h3>Points, Miles, and Deals</h3>
+                        <p>This is my core strength. Using a data-driven approach, I untangle the complexities of loyalty programs and promotions to book luxury travel—like business class flights and 5-star hotels—for a fraction of the cost.</p>
+                    </div>
+                </div>
+
+                <div class="specialty reverse">
+                     <div class="specialty-image">
+                        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1932" alt="Couple enjoying a scenic view">
+                    </div>
+                    <div class="specialty-text">
                         <h3>Couple's Getaways</h3>
                         <p>Whether planning a honeymoon, anniversary, or a spontaneous escape, I craft seamless and romantic itineraries designed to let you focus on what matters most: each other.</p>
                     </div>
-                    <div class="card">
-                        <h3>Korea & Japan</h3>
-                        <p>Leverage my deep, personal knowledge to explore beyond the tourist trails. Discover the most authentic food, vibrant culture, and hidden gems that make Korea and Japan unforgettable destinations.</p>
+                </div>
+
+                <div class="specialty">
+                    <div class="specialty-image">
+                        <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?q=80&w=2070" alt="Vibrant street in Japan">
                     </div>
-                    <div class="card">
-                        <h3>Points, Miles, and Deals</h3>
-                        <p>This is my core strength. Using a data-driven approach, I untangle the complexities of loyalty programs and promotions to book luxury travel—like business class flights and 5-star hotels—for a fraction of the cost.</p>
+                    <div class="specialty-text">
+                        <h3>Korea & Japan</h3>
+                        <p>Leverage my deep, personal knowledge to explore beyond the tourist trails. Discover the most authentic food, vibrant culture, and hidden gems that make these destinations unforgettable.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="section">
-            <div class="container">
+            <div class="container text-container">
                 <h2>Let's Plan Your Next Adventure</h2>
+                <p>Fill out the form below, and I'll get back to you to start crafting your perfect trip.</p>
                 <form action="#" method="POST"> <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
-                    <input type="tel" name="phone" placeholder="Your Phone (Optional)">
                     <textarea name="message" rows="5" placeholder="Tell me about your dream trip..." required></textarea>
                     <button type="submit">Send Inquiry</button>
                 </form>
@@ -73,14 +90,10 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 TQ Travel. All Rights Reserved.</p>
-            <p id="footer-address">
-                948 HIAWATHA PL S, SEATTLE, WA, 98144
-            </p>
-            <p>
-                <strong>Washington Seller of Travel Registration No.</strong> <span id="wa-sot-number">602864166</span>
-            </p>
-            <p>TQ Travel is an independent advisor of <a href="https://www.worldvia.com/" target="_blank">WorldVia Travel Network</a>.</p>
+            <p><strong>TQ Travel</strong></p>
+            <p>948 HIAWATHA PL S, SEATTLE, WA, 98144</p>
+            <p>Washington Seller of Travel Registration No. 602864166</p>
+            <p class="small-text">&copy; 2025 TQ Travel, an independent advisor of <a href="https://www.worldvia.com/" target="_blank">WorldVia Travel Network</a>.</p>
         </div>
     </footer>
 
