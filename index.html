@@ -1,1 +1,229 @@
-Test Page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TQ Travel - Data-driven Travel Itineraries</title>
+    <style>
+        /* Basic CSS for a clean, modern look */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* Header */
+        header {
+            background: #003366; /* A professional blue */
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 0;
+            font-weight: 300;
+        }
+        /* Navigation */
+        nav {
+            background: #f4f4f4;
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        nav a {
+            color: #003366;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        /* Hero Section */
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2070'); /* Placeholder Image */
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero .cta-button {
+            background: #ff9900; /* A vibrant orange */
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .hero .cta-button:hover {
+            background: #e68a00;
+        }
+        /* Sections */
+        .section {
+            padding: 40px 0;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+        .service-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 30%;
+            min-width: 280px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .card h3 {
+            color: #003366;
+        }
+        /* Contact Form */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        form button {
+            background: #003366;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            font-size: 1.1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        footer a {
+            color: #ff9900;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>TQ Travel</h1>
+            <p>An Independent Advisor of the WorldVia Travel Network</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="#about">About TQ Travel</a>
+            <a href="#services">Travel Specialties</a>
+            <a href="#contact">Plan Your Trip</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h2 id="hero-headline">Data-driven travel itineraries for modern travelers</h2>
+            <a href="#contact" class="cta-button" id="cta-button-text">Start Planning Now</a>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About TQ Travel</h2>
+                <p id="about-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    As a travel agent with a tech background (I am a Google software engineer) with a borderline unhealthy obsession with travel, I use the latest tech to find and stack promotions, deals, and quirks across travel industry providers to put together the absolute best bang for your buck trips.
+                </p>
+            </div>
+        </section>
+
+        <section id="services" class="section" style="background: #f4f4f4;">
+            <div class="container">
+                <h2>Our Travel Specialties</h2>
+                <div class="service-cards">
+                    <div class="card">
+                        <h3>Couple's Getaways</h3>
+                        <p>Whether planning a honeymoon, anniversary, or a spontaneous escape, I craft seamless and romantic itineraries designed to let you focus on what matters most: each other.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Korea & Japan</h3>
+                        <p>Leverage my deep, personal knowledge to explore beyond the tourist trails. Discover the most authentic food, vibrant culture, and hidden gems that make Korea and Japan unforgettable destinations.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Points, Miles, and Deals</h3>
+                        <p>This is my core strength. Using a data-driven approach, I untangle the complexities of loyalty programs and promotions to book luxury travel—like business class flights and 5-star hotels—for a fraction of the cost.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Let's Plan Your Next Adventure</h2>
+                <form action="#" method="POST"> <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="tel" name="phone" placeholder="Your Phone (Optional)">
+                    <textarea name="message" rows="5" placeholder="Tell me about your dream trip..." required></textarea>
+                    <button type="submit">Send Inquiry</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 TQ Travel. All Rights Reserved.</p>
+            <p id="footer-address">
+                948 HIAWATHA PL S, SEATTLE, WA, 98144
+            </p>
+            <p>
+                <strong>Washington Seller of Travel Registration No.</strong> <span id="wa-sot-number">602864166</span>
+            </p>
+            <p>TQ Travel is an independent advisor of <a href="https://www.worldvia.com/" target="_blank">WorldVia Travel Network</a>.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
